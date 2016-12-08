@@ -58,6 +58,7 @@
 					<select class="dropdown" id="theme">
 						<option value="khaki" selected>Khaki (default)</option>
 						<option value="blue">Blue (sample)</option>
+						<option value="custom">Blank slate</option>
 					</select>
 				</td>
 			</tr>
@@ -89,75 +90,12 @@
 				<td class="nresult" id="new28"></td>
 				<td class="dresult" id="delta28"></td>
 			</tr>
-			<tr id="anc13">
-				<td class="aname" id="name13">Atman:</td>
-				<td class="uservalue"><input type="number" value="0" min="0" id="old13"></td>
-				<td class="oresult" id="optimal13"></td>
-				<td class="nresult" id="new13"></td>
-				<td class="dresult" id="delta13"></td>
-			</tr>
-			<tr id="anc15">
-				<td class="aname" id="name15">Bhaal:</td>
-				<td class="uservalue"><input type="number" value="0" min="0" id="old15"></td>
-				<td class="oresult" id="optimal15"></td>
-				<td class="nresult" id="new15"></td>
-				<td class="dresult" id="delta15"></td>
-			</tr>
-			<tr id="anc18">
-				<td class="aname" id="name18">Bubos:</td>
-				<td class="uservalue"><input type="number" value="0" min="0" id="old18"></td>
-				<td class="oresult" id="optimal18"></td>
-				<td class="nresult" id="new18"></td>
-				<td class="dresult" id="delta18"></td>
-			</tr>
-			<tr id="anc11">
-				<td class="aname" id="name11">Dogcog:</td>
-				<td class="uservalue"><input type="number" value="0" min="0" id="old11"></td>
-				<td class="oresult" id="optimal11"></td>
-				<td class="nresult" id="new11"></td>
-				<td class="dresult" id="delta11"></td>
-			</tr>
-			<tr id="anc14">
-				<td class="aname" id="name14">Dora:</td>
-				<td class="uservalue"><input type="number" value="0" min="0" id="old14"></td>
-				<td class="oresult" id="optimal14"></td>
-				<td class="nresult" id="new14"></td>
-				<td class="dresult" id="delta14"></td>
-			</tr>
-			<tr id="anc12">
-				<td class="aname" id="name12">Fortuna:</td>
-				<td class="uservalue"><input type="number" value="0" min="0" id="old12"></td>
-				<td class="oresult" id="optimal12"></td>
-				<td class="nresult" id="new12"></td>
-				<td class="dresult" id="delta12"></td>
-			</tr>
-			<tr id="anc19">
-				<td class="aname" id="name19">Fragsworth:</td>
-				<td class="uservalue"><input type="number" value="0" min="0" id="old19"></td>
-				<td class="oresult" id="optimal19"></td>
-				<td class="nresult" id="new19"></td>
-				<td class="dresult" id="delta19"></td>
-			</tr>
 			<tr id="anc30">
 				<td class="aname" id="name30">Iris:</td>
 				<td class="uservalue"><input type="number" value="0" min="0" id="old30"></td>
 				<td class="oresult" id="optimal30"></td>
 				<td class="nresult" id="new30"></td>
 				<td class="dresult" id="delta30"></td>
-			</tr>
-			<tr id="anc29">
-				<td class="aname" id="name29">Juggernaut:</td>
-				<td class="uservalue"><input type="number" value="0" min="0" id="old29"></td>
-				<td class="oresult" id="optimal29"></td>
-				<td class="nresult" id="new29"></td>
-				<td class="dresult" id="delta29"></td>
-			</tr>
-			<tr id="anc21">
-				<td class="aname" id="name21">Kumawakamaru:</td>
-				<td class="uservalue"><input type="number" value="0" min="0" id="old21"></td>
-				<td class="oresult" id="optimal21"></td>
-				<td class="nresult" id="new21"></td>
-				<td class="dresult" id="delta21"></td>
 			</tr>
 			<tr id="anc4">
 				<td class="aname" id="name4">Libertas:</td>
@@ -187,13 +125,6 @@
 				<td class="nresult" id="new16"></td>
 				<td class="dresult" id="delta16"></td>
 			</tr>
-			<tr id="anc10">
-				<td class="aname" id="name10">Pluto:</td>
-				<td class="uservalue"><input type="number" value="0" min="0" id="old10"></td>
-				<td class="oresult" id="optimal10"></td>
-				<td class="nresult" id="new10"></td>
-				<td class="dresult" id="delta10"></td>
-			</tr>
 			<tr id="anc5">
 				<td class="aname" id="name5">Siyalatas:</td>
 				<td class="uservalue"><input type="number" value="0" min="0" id="old5"></td>
@@ -208,50 +139,114 @@
 				<td class="nresult" id="new3"></td>
 				<td class="dresult" id="delta3"></td>
 			</tr>
+			<tr id="anc15">
+				<td class="aname" id="name15">Bhaal:</td>
+				<td class="uservalue"><input type="number" value="0" min="0" id="old15"></td>
+				<td class="oresult" id="optimal15"></td>
+				<td class="nresult" id="new15"></td>
+				<td class="dresult" id="delta15"></td>
+			</tr>
+			<tr id="anc19">
+				<td class="aname" id="name19">Fragsworth:</td>
+				<td class="uservalue"><input type="number" value="0" min="0" id="old19"></td>
+				<td class="oresult" id="optimal19"></td>
+				<td class="nresult" id="new19"></td>
+				<td class="dresult" id="delta19"></td>
+			</tr>
+			<tr id="anc29">
+				<td class="aname" id="name29">Juggernaut:</td>
+				<td class="uservalue"><input type="number" value="0" min="0" id="old29"></td>
+				<td class="oresult" id="optimal29"></td>
+				<td class="nresult" id="new29"></td>
+				<td class="dresult" id="delta29"></td>
+			</tr>
+			<tr id="anc10">
+				<td class="aname" id="name10">Pluto:</td>
+				<td class="uservalue"><input type="number" value="0" min="0" id="old10"></td>
+				<td class="oresult" id="optimal10"></td>
+				<td class="nresult" id="new10"></td>
+				<td class="dresult" id="delta10"></td>
+			</tr>
+			<tr id="anc13">
+				<td class="aname" id="name13">Atman:</td>
+				<td class="uservalue"><input type="number" value="0" min="0" id="old13"></td>
+				<td class="oresult" id="optimal13"></td>
+				<td class="nresult" id="new13"></td>
+				<td class="dresult" id="delta13"></td>
+			</tr>
+			<tr id="anc18">
+				<td class="aname" id="name18">Bubos:</td>
+				<td class="uservalue"><input type="number" value="0" min="0" id="old18"></td>
+				<td class="oresult" id="optimal18"></td>
+				<td class="nresult" id="new18"></td>
+				<td class="dresult" id="delta18"></td>
+			</tr>
+			<tr id="anc11">
+				<td class="aname" id="name11">Dogcog:</td>
+				<td class="uservalue"><input type="number" value="0" min="0" id="old11"></td>
+				<td class="oresult" id="optimal11"></td>
+				<td class="nresult" id="new11"></td>
+				<td class="dresult" id="delta11"></td>
+			</tr>
+			<tr id="anc14">
+				<td class="aname" id="name14">Dora:</td>
+				<td class="uservalue"><input type="number" value="0" min="0" id="old14"></td>
+				<td class="oresult" id="optimal14"></td>
+				<td class="nresult" id="new14"></td>
+				<td class="dresult" id="delta14"></td>
+			</tr>
+			<tr id="anc12">
+				<td class="aname" id="name12">Fortuna:</td>
+				<td class="uservalue"><input type="number" value="0" min="0" id="old12"></td>
+				<td class="oresult" id="optimal12"></td>
+				<td class="nresult" id="new12"></td>
+				<td class="dresult" id="delta12"></td>
+			</tr>
+			<tr id="anc21">
+				<td class="aname" id="name21">Kumawakamaru:</td>
+				<td class="uservalue"><input type="number" value="0" min="0" id="old21"></td>
+				<td class="oresult" id="optimal21"></td>
+				<td class="nresult" id="new21"></td>
+				<td class="dresult" id="delta21"></td>
+			</tr>
 			<tr><td colspan="5" class="filler">&nbsp;</td></tr>
 			<tr>
-				<td rowspan="16">Statistics</th>
+				<td rowspan="15">Statistics</th>
 				<th colspan="4">Relic Information</th>
 			</tr>
 			<tr>
-				<td colspan="3">Relic found this ascension:</td>
+				<td class="result" colspan="3">Relic found this ascension:</td>
 				<td class="result" id="relicfound"></td>
 			</tr>
 			<tr>
-				<td colspan="3">Relic Ooze spawn zone:</td>
+				<td class="result" colspan="3">Relic Ooze spawn zone:</td>
 				<td class="result" id="reliczone"></td>
 			</tr>
 			<tr>
-				<td colspan="3">Relic level:</td>
+				<td class="result" colspan="3">Relic level:</td>
 				<td class="result" id="reliclevel"></td>
 			</tr>
 			<tr>
 				<th colspan="4">Summary and Totals</th>
 			</tr>
 			<tr>
-				<td colspan="3">Souls spent on ancients:</td>
+				<td class="result" colspan="3">Souls spent on ancients:</td>
 				<td class="result" id="soulsspent"></td>
 			</tr>
 			<tr>
-				<td colspan="3">World ascensions:</td>
+				<td class="result" colspan="3">World ascensions:</td>
 				<td class="result" id="worldresets"></td>
 			</tr>
 			<tr>
-				<td colspan="3">Highest zone ever:</td>
+				<td class="result" colspan="3">Highest zone ever:</td>
 				<td class="result" id="hze"></td>
 			</tr>
 			<tr>
-				<td colspan="3">Immortal Damage:</td>
+				<td class="result" colspan="3">Immortal Damage:</td>
 				<td class="result" id="titandamage"></td>
 			</tr>
 			<tr>
 				<th colspan="4" id="hshistory">Hero Souls history</th>
-			</tr>
-			<tr id="trchart" hidden>
-				<td colspan="4" align="center">
-					<div align="left">Daily HS income (Red line = 30-day average)</div>
-					<canvas id="hschart" width="500" height="200"></canvas>
-				</td>
 			</tr>
 			<tr>
 				<td class="hsheader" colspan="2">Total</td>
@@ -259,25 +254,25 @@
 				<td class="hsheader">Rate (HS / hour)</td>
 			</tr>
 			<tr>
-				<td>Today:</td>
+				<td class="result">Today:</td>
 				<td class="result" id="hstoday"></td>
 				<td class="result" id="hstpday"></td>
 				<td class="result" id="hstphour"></td>
 			</tr>
 			<tr>
-				<td>Yesterday:</td>
+				<td class="result">Yesterday:</td>
 				<td class="result" id="hsyday"></td>
 				<td class="result" id="hsypday"></td>
 				<td class="result" id="hsyphour"></td>
 			</tr>
 			<tr>
-				<td>Past 7 days:</td>
+				<td class="result">Past 7 days:</td>
 				<td class="result" id="hsweek"></td>
 				<td class="result" id="hswpday"></td>
 				<td class="result" id="hswphour"></td>
 			</tr>
 			<tr>
-				<td>Past 30 days:</td>
+				<td class="result">Past 30 days:</td>
 				<td class="result" id="hsmonth"></td>
 				<td class="result" id="hsmpday"></td>
 				<td class="result" id="hsmphour"></td>
@@ -286,35 +281,23 @@
 		</table>
 
 		<p class="comments">
-			Last updated June 4, 2016<br>
-			Clicker Heroes version 0.26b
+			Last updated August 14, 2015<br>
+			Clicker Heroes version 0.19
 		</p>
-		<b>Latest changes:</b><br>
-		<ul>
-			<li>Updated Rules Of Thumb calculations for Hybrid/Active based on <a href="https://redd.it/3y57jd">this thread</a></li>
-			<li>Fixed Argaiv level calculations for low levels of Siyalatas: Argaiv = sqrt(Morgulis)-13</li>
-			<li>Added a "Permalink" feature (the link will appear right next to "Do the math" button).<br>You can copy this link and open it in your browser again and it will automatically populate the ancient levels.</li>
-			<li>All ancients are shown initially now, to accommodate for mobile players</li>
-			<li>Put all ancients in alphabetical order (like in-game).</li>
-			<li>Removed 1.1 multiplier for banked HS = 1.1*Morgulis because of <a href="https://redd.it/3jew6u">math here</a></li>
-			<li>Added HS history graph</li>
-			<li>Option to hide the Options section (click Hide/Show options)</li>
-			<li>Added color schemes!</li>
-			<li>Minor adjustment to Gold Ancients ratio (0.93 &rarr; 0.927)</li>
-			<li>Now showing your Immortal Damage (total HS from Primals since v0.20 update)</li>
-			<li>Fixed an error in calculating HS per hour for past 30 days, thanks /u/Xeno234 for reporting</li>
-			<li>You can now access the page using <a href='http://hsoptimizer.github.io/ancient/?primalsouls=1'>this</a> link to enable "Include souls gained after ascension" by default.</li>
-			<li>This calculator no longer eats cookies. Settings and HS history is migrated to HTML5 local storage (thanks /u/aveavaeva!)</li>
-			<li>Hover over the Ancient name to see its effective bonuses</li>
-		</ul>
-		<b>The calculator will automatically hide ancients when:</b><br>
-		<ul>
-			<li>You have maxed out an ancient that has a level cap</li>
-			<li>An ancient is not desired and you don't have it</li>
-			<li>Clicking ancients with an idle playstyle</li>
-		</ul>
+		<p class="comments">
+			Latest changes:<br>
+			- You can now access the page using <a href='http://hsoptimizer.github.io/ancient/?primalsouls=1'>this</a> link to enable "Include souls gained after ascension" by default.<br>
+			- Improved balancing of ancients toward their Optimal, ancients should get leveled more evenly now!<br>
+			- This calculator no longer eats cookies. Settings and HS history is migrated to HTML5 local storage (thanks /u/aveavaeva!)<br>
+			- Added Relic Ooze calculation and relic level. Includes fix for +Starting zone after ascension bonuses by relics.<br>
+			- Added history of hero souls (hover over 'Hero Souls history')<br>
+			- Hover over the Ancient name to see its effective bonuses
+		</p>
 		<p class="comments">
 			Iris recommendation is experimental, following <a target="_blank" href='http://redd.it/3f3djb'>this analysis of Iris</a>.
+		</p>
+		<p class="comments">
+			About capped ancients: Ancients with a maximum level are initially hidden from view. They will only show if you have not maxed the ancient.<br>
 		</p>
 		<p class="comments">
 			<a target="_blank" href='http://redd.it/3fble2'>Clicker Heroes Ancient Calculator</a> by /u/findmeanewone.<br>
@@ -322,8 +305,6 @@
 			Made possible thanks to all the math grinding done by /u/Awlcer, /u/glitchypenguin, /u/Kragnir, /u/TheRealDumbleDore, /u/wrigleys26 (and others).<br>
 			Inspired by the <a target="_blank" href='http://wieschie.github.io/'>Simple Rules of Thumb Calculator</a> by /u/wieschie.
 		</p>
-		<p><a href="http://reignofblood.net/link.php?n=602429" title="vampire games"><img title="vampire games" alt="vampire games" src="http://reignofblood.net/images/bannerleader.jpg" width="468" height="60" border="0"></a></a></p>
-		<script src="scripts/Chart.min.js"></script>
-		<script src="scripts/mathmagician.js"></script>
+		<script src="scripts/mathmagician-test.js"></script>
 	</body>
 </html>
