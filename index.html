@@ -13,7 +13,7 @@
 	</head>
 
 	<body onload="init()">
-		<img src='http://i.imgur.com/rxZ8ypH.png' height="64px"><div id="title">Rules of Thumb<br><h1>Clicker Heroes Ancients Calculator</h1></div>
+		<img src='https://i.imgur.com/rxZ8ypH.png' height="64px"><div id="title">Rules of Thumb<br><h1>Clicker Heroes Ancients Calculator</h1></div>
 		<table>
 			<tbody>
 			<tr>
@@ -32,16 +32,16 @@
 				<td colspan="3" class="pref">Include souls gained after ascension</td>
 			</tr>
 			<tr>
-				<td><input type="checkbox" class="pref" id="ignoreIris"></td>
+				<td><input type="checkbox" id="ignoreIris" class="pref" disabled></td>
 				<td class="pref">Ignore Iris <a onclick="void(0)" onmouseover="nhpup.popup('Enabling this will ignore Iris during the optimization.');">(<u>?</u>)</a></td>
 				<td colspan="2" class="prefright">+<input type="number" class="uservalue" value="0" id="irisBonus">starting zone</td>
 			</tr>
 			<tr>
-				<td><input type="checkbox" class="pref" id="noBossLanding"></td>
+				<td><input type="checkbox" id="noBossLanding" class="pref" disabled</td>
 				<td colspan="3" class="pref">Do not ascend directly to a boss zone <a onclick="void(0)" onmouseover="nhpup.popup('Enabling this will cause the highest zone unlocked by Iris to be one zone before a Boss. Disable this to ascend directly to a Boss zone.');">(<u>?</u>)</a></td>
 			</tr>
 			<tr>
-				<td><input type="checkbox" class="pref" id="laxsolo"></td>
+				<td><input type="checkbox" id="laxsolo" class="pref" disabled></td>
 				<td colspan="3" class="pref">Easier Solomon <a onclick="void(0)" onmouseover="nhpup.popup('Enabling this will use log10 for Solomon instead of ln (log base e). This will value Solomon significantly lower. Not recommended!');">(<u>?</u>)</a></td>
 			</tr>
 			<tr>
@@ -323,6 +323,6 @@
 			Inspired by the <a target="_blank" href='http://wieschie.github.io/'>Simple Rules of Thumb Calculator</a> by /u/wieschie.
 		</p>
 		<script src="https://unpkg.com/chart.js@1.0.2/Chart.min.js"></script>
-		<script src="scripts/mathmagician.js"></script>
+		<script src="scripts/mathmagician-dev.js"></script>
 	</body>
 </html>
